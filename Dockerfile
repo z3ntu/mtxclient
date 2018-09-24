@@ -73,7 +73,7 @@ RUN \
     cmake -H. -Bbuild -GNinja -DCMAKE_BUILD_TYPE=Release && \
     cmake --build build --target install && \
     # json.hpp
-    curl -L https://github.com/nlohmann/json/releases/download/v3.2.0/json.hpp -o /usr/local/include/json.hpp && \
+    curl -L https://github.com/nlohmann/json/releases/download/v3.2.0/json.hpp -o /usr/local/include/nlohmann/json.hpp && \
     rm -rf /build/* && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean && \
